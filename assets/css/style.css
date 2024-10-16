@@ -2,7 +2,7 @@
 
 a {
     text-decoration: none;
-    color: #2f61eb;
+    color: #000000;
 }
 
 a:hover {
@@ -19,35 +19,51 @@ a:hover {
 
 body {
     display: flex;
-    min-width: 100vh;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.form {
-    border: solid 0.1rem;
+section {
     border-radius: 1rem;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
     padding: 3rem 4rem 4rem 4rem;
 }
 
 h1 {
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 input {
-    /* background: transparent;
-    border: none; */
+    position: relative;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    border-bottom: solid 0.1rem;
     display: flex;
     justify-content: center;
     width: 100%;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: 0.4rem;
 }
+
+
 label {
+    position: absolute;    
+    transform: translateY(-260%);
     display: flex;
-    justify-content: center;
     margin-top: 1rem;
     font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    pointer-events: none;
 }
 
 button {
@@ -67,3 +83,7 @@ button {
     justify-content: space-between;
 }
 
+img {
+    display: flex;
+    transform: translateY(100);
+}
