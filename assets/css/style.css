@@ -8,6 +8,8 @@ a {
 a:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: white;
+    transition: all ease-in-out 90ms;
 }
 
 *{
@@ -41,6 +43,7 @@ h1 {
 }
 
 input {
+    font-size: 1rem;
     position: relative;
     background: transparent;
     text-decoration: none;
@@ -66,14 +69,6 @@ label {
     pointer-events: none;
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-}
 
 .forgot {
     margin-top: 0.5rem;
@@ -87,3 +82,37 @@ img {
     display: flex;
     transform: translateY(100);
 }
+
+.inputbox .inputn:focus+label,
+.inputbox .inputn:valid+label {
+    top: 37%;
+    font-size: 0.8em;
+    transition: all ease-in-out 100ms;
+}
+
+.inputbox .inputs:focus+label,
+.inputbox .inputs:valid+label {
+    top: 51%;
+    font-size: 0.8em;
+    transition: all ease-in-out 100ms;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+    transition: all ease-in-out 200ms;
+}
+
