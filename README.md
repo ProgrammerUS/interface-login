@@ -6,7 +6,7 @@
 
  ### Linguagens utilizadas
 ![Html](https://img.shields.io/badge/-HTML5-000?&logo=html5)
-![Css](https://img.shields.io/badge/-CSS3-000?&logo=css3)
+![Css](https://img.shields.io/badge/-CSS3-000?&logo=css3) 
 
 Acesse a página: https://guilhermehfr.github.io/interface-login/
 <hr>
